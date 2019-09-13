@@ -1,0 +1,26 @@
+header{
+    display: flex;
+    justify-content: flex-end;
+    >button{
+        border:0;
+        margin-left:10px;
+        border-radius: 7px/7px;
+        padding: 10px;
+        opacity: 0.8;
+    }
+    >button:hover{
+        opacity:1;
+    }
+    .uno{
+        background-color: purple;
+        color:whitesmoke;
+    }
+    .dos{
+        background-color: blue;
+        color:whitesmoke;
+    }
+    .tres{
+        background-color: rgb(235, 79, 79);
+        color:whitesmoke;
+    }
+}

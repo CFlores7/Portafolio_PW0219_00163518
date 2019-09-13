@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap');
+
+:root{
+    box-sizing: border-box;
+}
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 7px;
+    box-sizing: inherit;
+}
+
+body{
+    background-image: url(https://www.setaswall.com/wp-content/uploads/2017/11/Multi-Color-Wallpaper-17-1920x1080.jpg);
+    height: 100%;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

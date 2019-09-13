@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap");
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header > button {
+  border: 0;
+  margin-left: 10px;
+  border-radius: 7px/7px;
+  padding: 10px;
+  opacity: 0.8;
+}
+
+header > button:hover {
+  opacity: 1;
+}
+
+header .uno {
+  background-color: purple;
+  color: whitesmoke;
+}
+
+header .dos {
+  background-color: blue;
+  color: whitesmoke;
+}
+
+header .tres {
+  background-color: #eb4f4f;
+  color: whitesmoke;
+}
+
+.main {
+  margin-top: 25vh;
+  margin-left: 25%;
+  margin-right: auto;
+  margin-bottom: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 300px;
+  width: 800px;
+}
+
+.main h1 {
+  display: table;
+  margin: 0px auto 0px auto;
+  padding: 5px;
+  background-color: whitesmoke;
+  border-radius: 10px/10px;
+  color: #858585;
+  font-size: 50px;
+  font-family: 'Hepta Slab', serif;
+}
+
+.main hr {
+  padding: 2px;
+  background-color: whitesmoke;
+}
+
+.main .ejercicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60%;
+  border-radius: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .ejercicio > * {
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  margin: 8px;
+  opacity: 0.8;
+}
+
+.main .ejercicio > div:hover {
+  opacity: 1;
+}
+
+.main .ejercicio > .one {
+  background-image: url(http://4.bp.blogspot.com/_G9jqFyVlods/S22vgDnYRUI/AAAAAAAABuQ/VMFLRHDZFTY/s320/AdidasLogo.jpg);
+  background-size: cover;
+}
+
+.main .ejercicio > .two {
+  background-image: url(https://marketingypublcidadistmetropolitano.files.wordpress.com/2016/09/manzana-10-o.png?w=748);
+  background-size: cover;
+}
+
+.main .ejercicio > .three {
+  background-image: url(https://www.pepsico.com/images/album/brand-logos/gatorade-logo.jpg?sfvrsn=db721211_2);
+  background-size: cover;
+}
+
+.main .ejercicio > .four {
+  background-image: url(https://www.flashrouters.com/wp/wp-content/uploads/2016/02/asus-logo-small-square.jpg);
+  background-size: cover;
+}
+
+.main .ejercicio > .five {
+  background-image: url(http://media.digitalnewsreport.org/wp-content/uploads/2018/05/WhatsApp_logo_square.png?x89475);
+  background-size: cover;
+}
+
+.main .ejercicio > .six {
+  background-image: url(https://www.thecampussocialite.com/wp-content/uploads/Playstation-logo.png);
+  background-size: cover;
+}
+
+.main .ejercicio > .seven {
+  background-image: url(https://carlaantonioli.com/wp-content/uploads/2015/11/Huawei-logo.jpg);
+  background-size: cover;
+}
+
+.main .ejercicio > .eight {
+  background-image: url(http://cdn-thumbshot-ie.pearltrees.com/29/58/2958abfa404b0cb6b62ffb74809c20f7-pearlsquare.jpg);
+  background-size: cover;
+}
+
+.main .ejercicio > .nine {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/72/YouTube_social_white_square_%282017%29.svg);
+  background-size: cover;
+}
+
+.main .ejercicio > .ten {
+  background-image: url(https://media.gm.com/dld/content/dam/Media/images/US/Logos/chevrolet/historical/CHEVYlogo.jpg);
+  background-size: cover;
+}
+
+.main .ejercicio > .eleven {
+  background-image: url(https://pbs.twimg.com/profile_images/474913821081890816/GJpUR7ws.png);
+  background-size: cover;
+}
+
+.main .ejercicio > .twelve {
+  background-image: url(https://stylemba.com/wp-content/uploads/2012/04/Nike-Golf-Square-Logo-300x300.png);
+  background-size: cover;
+}
+
+.main .ejercicio > .thirteen {
+  background-image: url(https://i.pinimg.com/originals/db/8f/eb/db8feba8ab914f075605a4c16d3ef44b.jpg);
+  background-size: cover;
+}
+
+.main .ejercicio > .fourteen {
+  background-image: url(https://squareclap.com/wp-content/uploads/2018/01/puma.png);
+  background-size: cover;
+}
+
+.main .ejercicio > .fifteen {
+  background-image: url(data:image/png;base64,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);
+  background-size: cover;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer a {
+  color: whitesmoke;
+}
+
+.footer > button {
+  border: 0;
+  margin-left: 10px;
+  border-radius: 7px/7px;
+  padding: 5px;
+  opacity: 0.8;
+  background-color: #161515;
+}
+
+.footer > button:hover {
+  opacity: 1;
+}
+
+:root {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 7px;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-image: url(https://www.setaswall.com/wp-content/uploads/2017/11/Multi-Color-Wallpaper-17-1920x1080.jpg);
+  height: 100%;
+  background-size: cover;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
