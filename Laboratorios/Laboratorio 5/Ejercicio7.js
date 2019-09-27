@@ -1,11 +1,7 @@
-var numero = prompt("Ingrese un numero");
-
-var funcion = fibonacci =>{
-    if (numero === 1){
-        console.log("0");
-    }else{
-        for(i=0; i<numero; i++){
-            
-        }
-    }
+function fibonacci(numero) {
+    if (numero <=  1) return numero;
+    
+    return fibonacci(numero-1) + fibonacci(numero-2);
 }
+
+console.log(fibonacci(5));
