@@ -11,12 +11,12 @@ let carnet_regex = new RegExp("^[0-9]{8}$");
         Función para agregar un hijo a la tabla
     */
 
-let addStudent = (carnet, schedule, late) => {
+  let addStudent = (carnet, schedule, late) => {
   let new_row = document.createElement("tr");
   let datetime = new Date();
 
-  new_row.classList.add("table-active");
-  new_row.innerHTML = `<th scope='row'>${carnet}</th>
+  //new_row.classList.add("table-active");
+  new_row.getElementById("table_body").innerHTML = `<th scope='row'>${carnet}</th>
             <td>${schedule}</td>
             <td>${datetime.toLocaleString()}</td>
             <td>${late}</td>`;
@@ -29,23 +29,38 @@ let addStudent = (carnet, schedule, late) => {
   newBtn.classList.add("btn-danger");
   newBtn.innerText = "Drop";
   newBtn.value = idCounter;
-
+  
   cellContainer.appendChild(newBtn);
   new_row.appendChild(cellContainer);
+  
+  //Creacion del espacio para input
+  let inputContainer = document.createElement("td");
+
+  let newInput = document.createElement("input");
+  newInput.classList.add("form-control");
+
+  inputContainer.appendChild(newInput);
+  new_row.appendChild(inputContainer);
+  
 
   newBtn.addEventListener("click", event => {
     let idElement = event.srcElement.value;
+    let inputxt = newInput.value; //Obtención del valor del input
 
     let elementNode = document.querySelector(
       `tr>td>button[value='${idElement}']`
     ).parentElement.parentElement;
-
+    
+    //Comparación del carnet con el valor del input
+    if (carnet == inputxt){
     table_body.removeChild(elementNode);
+    }else{
+      alert("Inserte el valor de carnet correspondiente a eliminar");
+    };
   });
 
   idCounter++;
 
-  table_body.appendChild(new_row);
 };
 
 /*
